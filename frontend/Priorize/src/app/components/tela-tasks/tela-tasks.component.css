@@ -1,0 +1,29 @@
+.background-task {
+  margin: 85px auto auto auto;
+  
+  width: 1273px;
+  height: 758px;
+  background-color: var(--cor-background);
+  border: solid var(--cor-borda) 1px;
+  border-radius: 10px;
+   
+  
+}
+
+.Search-Criar{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+  width: auto;
+  height: 40px;
+  margin: 30px auto auto 88px;
+}
+  .tabela{
+  width: 1144px;
+  height: auto;
+  background-color: var(--cor-background);
+  border: solid var(--cor-borda) 1px;
+  border-radius: 10px;
+  margin:88px auto 115px auto;
+}

@@ -1,0 +1,23 @@
+<div class="background-criar-task">
+  <div class="input-category">
+    <input
+      class="input"
+      type="text"
+      [(ngModel)]="nome"
+      name="nome"
+      placeholder="Digite o nome da Task"
+    />
+    <div class="card flex justify-content-center">
+      <p-selectButton
+        [options]="categorySelect"
+        [(ngModel)]="categoria"
+        optionLabel="label"
+        optionValue="categoria"
+      />
+    </div>
+  </div>
+
+  <textarea class="text-area" rows="5" cols="30" pInputTextarea [(ngModel)]="detalhes" ></textarea>
+  <p-button class="botao" label="Submit" (onClick)="mandarForm()"/>
+</div>
+<p-toast />

@@ -1,0 +1,18 @@
+
+@import "primeicons/primeicons.css";
+:root{
+    --cor-borda:#A9A9A9;
+    --cor-background:#f5f5f5;
+    --cor-letra:#1E1E1E;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F0F1F1;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color:var(--cor-letra);
+}

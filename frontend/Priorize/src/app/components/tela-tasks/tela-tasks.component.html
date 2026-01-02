@@ -1,0 +1,62 @@
+<div class="background-task">
+  <div class="Search-Criar">
+    <p-iconField iconPosition="left">
+      <p-inputIcon styleClass="pi pi-search" />
+      <input type="text" pInputText placeholder="Search" [(ngModel)]="searchTerm"
+  (ngModelChange)="filtrarTasks()"/>
+    </p-iconField>
+
+    <a routerLink="criar-task"><p-button label="Criar task" styleClass="botao-criar"></p-button></a>
+  </div>
+  <div class="tabela">
+    <div class="mb-3">
+      <p-button
+        type="button"
+        icon="pi pi-chevron-left"
+        (onClick)="prev()"
+        styleClass="p-button-text"
+      />
+      
+      <p-button
+        type="button"
+        icon="pi pi-chevron-right"
+        (onClick)="next()"
+        styleClass="p-button-text"
+      />
+    </div>
+    <p-table
+      [value]="tasks"
+      [paginator]="true"
+      [rows]="5"
+      [first]="first"
+      [showCurrentPageReport]="true"
+      [tableStyle]="{ 'min-width': '50rem' }"
+      currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+      (onPage)="pageChange($event)"
+      
+    >
+      <ng-template pTemplate="header">
+        <tr>
+          <th style="width: 20%">Nome</th>
+          <th style="width: 20%">Status</th>
+          <th style="width: 20%">Category</th>
+          <th style="width: 20%">Detalhes</th>
+          <th style="width: 5%"></th>
+          <th style="width: 10%"></th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-task>
+        <tr>
+          <td>{{ task.nome }}</td>
+          <td>{{ task.status }}</td>
+          <td>{{ task.categoria }}</td>
+          <td>{{ task.detalhes }}</td>
+          <td><p-button icon="pi pi-check" (onClick)="atualizarStatus('Concluído', task.id)"/></td>
+          <td><p-button icon="pi pi-times" [rounded]="true" severity="danger" (onClick)="excluirTask(task.id)"/></td>
+        </tr>
+      </ng-template>
+      
+    </p-table>
+  </div>
+</div>
+<p-toast />

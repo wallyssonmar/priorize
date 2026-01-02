@@ -1,0 +1,106 @@
+.background-dashboard {
+  margin: 97px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 979px;
+  height: 633px;
+  background-color: var(--cor-background);
+  border: solid var(--cor-borda) 1px;
+  border-radius: 10px;
+}
+
+.corpo-pagina {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 625px;
+  background-color: var(--cor-background);
+}
+.welcome {
+  font-size: 48px;
+  background-color: var(--cor-background);
+  padding-bottom: 25px;
+}
+.info-tasks {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--cor-background);
+}
+.tasks {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--cor-background);
+  border: solid var(--cor-borda) 1px;
+  border-radius: 10px;
+  width: 198px;
+  height: 123px;
+}
+.tasks:not(:last-child) {
+  margin-right: 96px;
+}
+
+.tasks h2 {
+  display: flex;
+  background-color: var(--cor-background);
+  margin: 21px auto 21px 21px;
+}
+
+.tasks p {
+  display: flex;
+  background-color: var(--cor-background);
+  margin: 0px auto 21px 21px;
+  font-size: 3rem;
+}
+
+.task-category {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cor-background);
+  width: 786px;
+  height: 305px;
+  background-color: var(--cor-background);
+  border: solid var(--cor-borda) 1px;
+  border-radius: 10px;
+  margin: 59px auto 33px auto;
+}
+.titulo-task {
+  display: flex;
+  background-color: var(--cor-background);
+  margin: 20px;
+}
+
+.tipo-categoria {
+  display: flex;
+  flex-direction: row;
+}
+.categoria {
+  width: 12rem;
+  height: 9rem;
+  margin: 0 auto 0 20px;
+}
+.categoria p {
+  font-size: 40px;
+  padding-left: 2rem;
+}
+.categoria h2 {
+  padding-left: 1rem;
+}
+
+.categoria-1 {
+  background-color: #ccffcc;
+  border: solid var(--cor-borda) 1px;
+  border-radius: 10px;
+}
+.categoria-2 {
+  background-color: #ffffcc;
+  border: solid var(--cor-borda) 1px;
+  border-radius: 10px;
+}
+.categoria-3 {
+  background-color: #ffcccc;
+  border: solid var(--cor-borda) 1px;
+  border-radius: 10px;
+}

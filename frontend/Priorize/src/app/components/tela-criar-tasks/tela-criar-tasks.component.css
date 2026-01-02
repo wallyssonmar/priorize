@@ -1,0 +1,43 @@
+.background-criar-task {
+  margin: 97px auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 979px;
+  height: 633px;
+  background-color: var(--cor-background);
+  border: solid var(--cor-borda) 1px;
+  border-radius: 10px;
+}
+
+.input-category {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10rem;
+  flex-direction: row;
+  margin:30px 0 60px 0;
+}
+
+.input-category input {
+  width: 300px;
+  height: 42px;
+  padding-left: 10px;
+  background-color: var(--cor-background);
+  border: solid var(--cor-borda) 1px;
+  border-radius: 10px;
+  
+}
+
+
+
+.text-area {
+    display: flex;
+    width: 840px; 
+    height: 300px;
+}
+.botao{
+ display: flex;
+ align-items: flex-end;
+ margin: auto  70px 30px auto;
+}
